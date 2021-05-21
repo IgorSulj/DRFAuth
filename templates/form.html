@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static '3.css' %}">
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button>OK</button>
+    </form>
+    <br>
+    <a href=""><button>Показать продукт</button></a>
+    <script src="{% static '4.js' %}"></script>
+</body>
+</html>
